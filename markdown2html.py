@@ -3,13 +3,11 @@
 """
 Markdown script using python.
 """
+from time import sleep
+import hashlib
 import sys
 import os.path
 import re
-<<<<<<< HEAD
-import hashlib
-=======
-from time import sleep
 
 
 def h(line):
@@ -189,9 +187,6 @@ def perror(*args, **kwargs):
     print(*args, file=stderr, **kwargs)
 
 
-if __name__ == "__main__":
->>>>>>> d742f43859c66b01b954bcaebacc7eba6518b181
-
 if __name__ == '__main__':
     if len(sys.argv) < 3:
         print('Usage: ./markdown2html.py README.md README.html',
@@ -202,7 +197,6 @@ if __name__ == '__main__':
         print('Missing {}'.format(sys.argv[1]), file=sys.stderr)
         exit(1)
 
-<<<<<<< HEAD
     with open(sys.argv[1]) as read:
         with open(sys.argv[2], 'w') as html:
             unordered_start, ordered_start, paragraph = False, False, False
@@ -278,7 +272,4 @@ if __name__ == '__main__':
                 html.write('</ol>\n')
             if paragraph:
                 html.write('</p>\n')
-    exit (0)
-=======
-    mark2html(*argv)
->>>>>>> d742f43859c66b01b954bcaebacc7eba6518b181
+    exit(0)
