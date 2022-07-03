@@ -95,7 +95,6 @@ def mark2html(*argv):
     ouputFile = argv[2]
     flags = argv[3:]
 
-
     with open(inputFile, "r") as f:
         markdown = f.readlines()
 
@@ -134,8 +133,8 @@ def mark2html(*argv):
 
             while new_index < len(markdown):
                 line = clean_line(markdown[new_index])
-                if ((new_index + 1) < len(markdown)
-                        and markdown[new_index + 1] is not None):
+                if ((new_index + 1) < len(markdown) and
+                        markdown[new_index + 1] is not None):
                     next_line = markdown[new_index + 1]
                 else:
                     next_line = "\n"
