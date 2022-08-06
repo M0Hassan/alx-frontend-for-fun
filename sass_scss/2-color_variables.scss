@@ -1,0 +1,16 @@
+/* assigns text color of body and p to #3D3D3D and background color to #6D6D6D of body and h2 */
+$colorvar: #3D3D3D;
+$backgroundvar: #6D6D6D;
+
+body {
+    color: $colorvar;
+    background-color: $backgroundvar;
+}
+
+p {
+    color: $colorvar;
+}
+
+h2 {
+    background-color: $backgroundvar;
+}
