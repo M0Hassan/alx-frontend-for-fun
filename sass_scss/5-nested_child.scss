@@ -1,0 +1,8 @@
+/* assigning declarations to nested selectorsw */
+body {
+
+    color: #3D3D3D;
+    >  .red {
+	color: #FF0000;
+    }
+}
